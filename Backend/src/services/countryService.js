@@ -17,3 +17,12 @@ export const countryInfo = async (URL, countryCode) => {
     throw new Error("Failed to fetch country information");
   }
 };
+
+export const countryPopulation = async(URL) => {
+  try{
+    const result = await axios.get(URL);
+    return result.data;
+  }catch (err) {
+    throw new Error("Failed to fetch country population");
+  }
+}
