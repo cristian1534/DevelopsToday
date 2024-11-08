@@ -2,12 +2,14 @@ import {
   countryAvailable,
   countryInfo,
   countryPopulation,
+  countryFlags,
 } from "../services/countryService.js";
 import {
   API_URL_INFO,
   API_URL_POPULATION,
   API_URL,
   API_URL_BORDER,
+  API_URL_FLAGS,
 } from "../utils/api.js";
 
 export const countryAvailableController = async (req, res) => {
@@ -60,6 +62,18 @@ export const countryBorderController = async (req, res) => {
       return res.status(404).json({ message: "Country not found" });
 
     res.status(200).json(countryData.borders);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
+export const countryFlagsController = async (req, res) => {
+  try {
+    const flags = await countryFlags(API_URL_FLAGS);
+    if (!flags)
+      return res.status(404).json({ message: "Flags not found" });
+
+    res.status(200).json(flags);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
