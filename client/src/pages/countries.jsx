@@ -17,6 +17,9 @@ export default function Countries() {
 
   return (
     <div className="countries-container">
+      <Link href="/">
+        <span className="back-button">Back Home</span>
+      </Link>
       <table className="countries-table">
         <thead>
           <tr className="table-header">

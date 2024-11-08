@@ -7,6 +7,16 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.back-button {
+  color: #2c65d8;
+}
+
+.back-home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .country-name {
   font-size: 2rem;
   color: #333;

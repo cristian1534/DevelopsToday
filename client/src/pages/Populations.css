@@ -10,3 +10,9 @@
 .next-button:hover {
     background-color: #537cc7;
 }
+
+.back-button {
+    color: #2c65d8;
+    margin-left: 10px;
+  }
+  

@@ -1,7 +1,7 @@
 import "./Populations.css";
 import "dotenv/config";
 import React, { useEffect, useState } from "react";
-import useFetchPopulation from "../customHooks/useFetchPopulation";
+import useFetch from "../customHooks/useFetch";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,6 +13,7 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import Link from "next/link";
 
 export default function Population() {
   const [example, setExample] = useState(2);
@@ -27,11 +28,11 @@ export default function Population() {
   );
   const [populationCountriesData, setPopulationCountriesData] = useState(null);
   const countryPopulationsExamples = ["BIH", "ARM", "BRN"];
-  const URL_POPULATION = `${process.env.NEXT_PUBLIC_REACT_URL_POPULATION}/${
+  const URL = `${process.env.NEXT_PUBLIC_REACT_URL_POPULATION}/${
     countryPopulationsExamples[`${example}`]
   }`;
 
-  const { data, loading } = useFetchPopulation(URL_POPULATION);
+  const { data, loading } = useFetch(URL);
 
   useEffect(() => {
     if (data) {
@@ -97,6 +98,9 @@ export default function Population() {
   return (
     <div className="container">
       <h2>Population Data: {countryPopulationsExamples[`${example}`]}</h2>
+      <Link href="/">
+        <span className="back-button">Back Home</span>
+      </Link>
       <button
         type="button"
         className="next-button"
