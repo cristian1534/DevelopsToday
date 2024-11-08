@@ -25,4 +25,13 @@ export const countryPopulation = async(URL) => {
   }catch (err) {
     throw new Error("Failed to fetch country population");
   }
+};
+
+export const countryBorders = async (URL, countryCode) => {
+  try {
+    const result = await axios.get(`${URL}/${countryCode}`);
+    return result.data;
+  } catch (err) {
+    throw new Error("Failed to fetch country borders");
+  }
 }
