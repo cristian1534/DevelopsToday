@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: next-client
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./client/.env
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: node-backend
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./backend/.env 
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
