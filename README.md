@@ -1,6 +1,6 @@
 # 🌎 Country Project - Data Visualization and API
 
-![Cover Image](https://res.cloudinary.com/dutafv5us/image/upload/v1731100643/ublxlvjyebbjzvpmce1i.png)
+![Cover Image](https://res.cloudinary.com/dutafv5us/image/upload/v1731407860/zzmltx1d5b4yguhsnkmo.png)]
 
 ## 🌐 Project Description
 **Country Project** is a full-stack application designed for visualizing and interacting with country data. Built with **Next.js** for the frontend and **Node.js** with **Express** for the backend, this project follows a microservices architecture managed through **Docker**.
@@ -15,8 +15,8 @@
   - ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
 
 ## 📸 Screenshots
- ![](https://res.cloudinary.com/dutafv5us/image/upload/v1731100729/kyrcl2sotwjjcumj7dmz.png)
- ![](https://res.cloudinary.com/dutafv5us/image/upload/v1731100868/bwwmjet1xc2bj49fewh1.png)
+ ![](https://res.cloudinary.com/dutafv5us/image/upload/v1731407916/zqxfmrzk9jsugksk7jz1.png)
+ ![](https://res.cloudinary.com/dutafv5us/image/upload/v1731407951/iqgahctw4pwvl7oet9vg.png)
 
 ## 🚀 Installation
 
