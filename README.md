@@ -2,7 +2,7 @@
 
 
 ## 🌐 Project Description
-**Country Project** is a Full-Stack application designed for visualizing and interacting with country data. Built with **Next.js** for the frontend and **Node.js** with **Express** for the backend, this project follows a microservices architecture managed through **Docker**.
+**Country Project** is a Full-Stack application designed for visualizing and interacting with country data. Built with **Next.js** for the frontend and **Node.js** with **Express** for the backend.
 
 ## 🛠️ Technologies Used
 - **Frontend**
@@ -13,8 +13,7 @@
   - ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge)
   - ![Typescript](https://img.shields.io/badge/Typescript-000?logo=typescript&logoColor=white&style=for-the-badge)
   - ![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white&style=for-the-badge)
-- **DevOps**
-  - ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
+
 
 ## 📸 Screenshots
  ![](https://res.cloudinary.com/dutafv5us/image/upload/v1735252793/idqfoli2zourterhc4pm.png)
